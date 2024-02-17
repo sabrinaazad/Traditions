@@ -1,0 +1,81 @@
+.section--locations-map {
+    .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        .left {
+            select {
+                border: none;
+                @include dropShadow();
+                padding: 1em;
+                width: 20em;
+                margin: 1em auto;
+                color: $baseColor;
+            }
+            .button-wrapper {
+                .btn {
+                    display: inline-block;
+                }
+            }
+        }
+        @include tablet {
+            flex-direction: row;
+            justify-content: space-between;
+            text-align: left;
+            .left {
+                flex-basis: 30%;
+            }
+            .right {
+                flex-basis: 60%;
+            }
+        }
+       
+    }
+}
+
+.section--locations-result {
+    .location { 
+        box-shadow: 0px 1px 5px 1px $lightgray;
+        padding: 2em;
+        margin: 2em 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        line-height: 2;
+        flex-direction: column;
+        text-align: center;
+        background-color: $white;
+        @include tablet {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+        }
+        .col {
+            @include tablet {
+                flex-basis: 24%;
+            }
+        }
+        .service-types {
+            span {
+                &::after {
+                    content: ", ";
+                }
+            }
+            span:last-child {
+                &::after {
+                    content: none;
+                }
+            }
+        }
+        .address p {
+            line-height: 2;
+        }
+        .col:last-child {
+            margin-top: 2em;
+            @include tablet {
+                margin-top: 0;
+            }
+        }
+    }
+}

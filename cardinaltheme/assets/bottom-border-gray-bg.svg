@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="225" viewBox="0 0 1920.001 225">
+  <g id="BottomBorderGray" data-name="Bottom Border Gray" transform="translate(0 -9753.188)">
+    <path id="GrayBG" data-name="Gray BG" d="M116,433.921H2036L1076,596.012Zm0,0V371H2036v62.921Z" transform="translate(-115.999 9382.188)" fill="#e7e6e6"/>
+    <path id="AccentBorder" data-name="Accent Border" d="M15910.566,2803.518l959.639,163.2,960.361-163.2v-10l-960.361,165-959.639-165Z" transform="translate(-15910.566 6974.482)" fill="#007e8a"/>
+  </g>
+</svg>

@@ -1,0 +1,114 @@
+/************************************************************************/
+/**************************** FOOTER STYLES *****************************/
+/************************************************************************/
+
+.footer {
+    background-color:$secondary;
+    color: $white;
+    text-align: center;
+    a {
+        color: $white;
+    }
+    p {
+        line-height: 2;
+    }
+    .footer-top-container {
+        display: flex;
+        flex-direction: column;
+        .left-container {
+            order: 2;
+        }
+        .main-container {
+            order: 1;
+        }
+        .right-container {
+            order: 3;
+            text-align: center;
+        }
+        @include tablet {
+            flex-direction: row;
+            .left-container {
+                flex-basis: 25%;
+                order: 1;
+            }
+            .main-container {
+                flex-basis: 50%;
+                order: 2;
+            }
+            .right-container {
+                flex-basis: 25%;
+                order: 3;
+                text-align: right;
+            }
+        }
+    }
+    .logo-container {
+        margin: 0 auto;
+        img {
+            max-width: 20em;
+        }
+    }
+    .icons-container {
+        margin: 2em 0;
+        .icon {
+            margin: 0 0.25em;
+            img {
+                width: 2em;
+                height: 2em;
+                @include transitionAll();
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+    .menu-container {
+        .footer-nav-1, 
+        .footer-nav-2 {
+            padding-left: 0;
+            list-style-type: none;
+            text-align: center;
+            li {
+                padding: 1em 0.25em;
+                text-transform: uppercase;
+                a:hover {
+                    opacity: 0.8;
+                }
+                &.btn {
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0;
+                    a {
+                        color: $primary;
+                        font-family: Montserrat-Bold;
+                        padding: 1em 1.5em;
+                        display: block;
+                    }
+                    &:hover {
+                        a {
+                            opacity: 0.8;
+                        }
+                    }
+                }
+            }
+            @include tablet {
+                flex-basis: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        .footer-nav-1 {
+            @include tablet {
+                align-items: flex-start;
+            }
+        }
+    }
+    .info-container {
+        text-align: center;
+        font-size: 0.75em;
+        a:hover {
+            opacity: 0.8;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+name: Cardinal Production Deploy
+on:
+  push:
+    branches: [ master ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Deploy to Server
+      uses: easingthemes/ssh-deploy@v3.0.1
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        REMOTE_HOST: ssh.getflywheel.com
+        REMOTE_USER: ${{ secrets.REMOTE_USER }}
+        REMOTE_PORT: '22 -o PubkeyAcceptedKeyTypes=+ssh-rsa'
+        ARGS: -rltgoDzvO --exclude .git --exclude .github
+        TARGET: /www/wp-content/themes/
+
+
+

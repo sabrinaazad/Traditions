@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="168" viewBox="0 0 1920 168">
+    <g id="AccentBorder" data-name="Accent Border" transform="translate(0.0 -735)">
+        <path id="WhiteFill" data-name="White Fill" d="M-14808.97-10768.134l964.813,144.019,955.188-144.019v160h-1920" transform="translate(14808.97 11511.134)" fill="#fff" stroke="rgba(112,112,112,0)" stroke-width="1"/>
+        <path id="Border" data-name="Border" d="M15910.566,2824.668l959.639,142.051,960.361-142.051v-10l-960.361,144.346-959.639-144.346Z" transform="translate(-15910.566 -2079.668)" fill="#007e8a"/>
+    </g>
+</svg>

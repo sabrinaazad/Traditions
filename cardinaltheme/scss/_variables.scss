@@ -1,0 +1,69 @@
+/************************************************************************/
+/******************************* VARIABLES ******************************/
+/************************************************************************/
+
+
+/* COLORS */
+$primary: #007E8A;
+$secondary: #782F40;
+$tertiary: #F87060;
+$quaternary: #122638;
+$quinary: #94C9CE;
+$senary: #D5EAEC;
+
+$white: #FFFFFF;
+$black: #000000;
+$lightgray: #D4D4D4;
+
+$announcementBG: #e7e7e7;
+$mapBG: #e7e6e6;
+$btnp1: #f7aca4;
+
+$transparent: rgba(255, 255, 255, 0);
+
+$baseColor: $quaternary;
+$mainFontSize: 16px;
+
+$transitionTime: 300ms;
+$transitionType: ease;
+
+
+/* MIXINS */
+@mixin transition($x...){
+  -webkit-transition: $x;
+  -moz-transition: $x;
+  -ms-transition: $x;
+  -o-transition: $x;
+  transition: $x;
+}
+
+@mixin transitionAll(){
+    -webkit-transition: all $transitionTime $transitionType;
+    -moz-transition: all $transitionTime $transitionType;
+    transition: all $transitionTime $transitionType;
+}
+
+@mixin dropShadow(){
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+@mixin dropShadowDark(){
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+@mixin borderRadius(){
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  border-radius: 1em;
+}
+
+@mixin buttonBorderRadius(){
+  -webkit-border-radius: 1.5em;
+  -moz-border-radius: 1.5em;
+  border-radius: 1.5em;
+}
+@mixin backgroundProperties(){
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
